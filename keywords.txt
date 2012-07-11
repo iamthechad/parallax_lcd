@@ -1,0 +1,17 @@
+ParallaxLCD	KEYWORD1
+setup	KEYWORD2
+on	KEYWORD2
+off	KEYWORD2
+scrollLeft	KEYWORD2
+scrollRight	KEYWORD2
+empty	KEYWORD2
+cursorUnderline	KEYWORD2
+cursorBlock	KEYWORD2
+cursorOff	KEYWORD2
+cursorOnChrBlink	KEYWORD2
+cr	KEYWORD2
+lf	KEYWORD2
+backLightOn	KEYWORD2
+backLightOff	KEYWORD2
+pos	KEYWORD2
+at	KEYWORD2
