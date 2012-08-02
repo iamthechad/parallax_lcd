@@ -17,6 +17,9 @@
 	allen joslin
 	payson productions
 	allen@joslin.net
+
+	Updated 8/1/2012 Martin C. Stoufer mcstoufer@speakeasy.net
+        # Added interface functions to play music and define/print custom characters
 */
 #include <Arduino.h>
 
@@ -102,6 +105,55 @@ void ParallaxLCD::backLightOn () {
 
 void ParallaxLCD::backLightOff () {
 	write(18); delay(_bv[BOUNCE]);
+}
+
+/**
+ * Duration: 208 - 214 (1/64th note - 1 whole note[2 secs])
+ * Scale   : 215 - 219 (3rd - 7th scale)
+ * Note    : 220 - 232 (A, A#, B, etc..., F#, F, G#)
+ */
+void ParallaxLCD::playTone(int duration, int scale, int note) {
+	
+	duration = constrain(duration, 208, 214);
+	scale = constrain(scale, 215, 219);
+	note = constrain(note, 220, 232);
+
+    write(scale);
+    write(note);
+    write(duration);
+    delay(_bv[BOUNCE]);
+}
+
+/**
+ * Set a custom character at the 'charIndex' index (0-7) with an
+ *  array of bytes. Nominally, this will contain 8 bytes in it.
+ */
+void ParallaxLCD::setCustomCharacter(int charIndex, byte bytes[]) {
+
+   if(sizeof(bytes)/sizeof(bytes[0]) > 8) {
+      return;
+   }
+
+   int index = constrain(charIndex, 0, 7);
+   index = map(index, 0, 7, 248, 255);
+   
+   unsigned char *byte = bytes;
+   
+   write(index);
+   for (int i=0; i < 8; i++) {
+     write(byte[i]);
+   }
+   delay(_bv[BOUNCE]);
+}
+
+/**
+ * Print whatever is stored in the custom character buffer.
+ * If nothing is stored there, usually, nothing will print out.
+ */
+void ParallaxLCD::printCustomCharacter(int charIndex) {
+   int index = constrain(charIndex, 0, 7);
+   write(index);
+   delay(_bv[BOUNCE]);
 }
 
 void ParallaxLCD::pos ( int row, int col ) 

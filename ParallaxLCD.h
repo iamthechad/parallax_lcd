@@ -17,6 +17,9 @@
 	allen joslin
 	payson productions
 	allen@joslin.net
+	
+	Updated 8/1/2012 Martin C. Stoufer mcstoufer@speakeasy.net
+	# Added interface functions to play music and define/print custom characters.
 */
 
 #ifndef ParallaxLCD_h
@@ -40,6 +43,10 @@
 /*     CR: Carrage Return control                                                                     */
 /*                                                                                                    */
 /*     Cursor: Cursor Control                                                                         */
+/*                                                                                                    */
+/*     Music: Generate tones for Piezo speaker                                                        */
+/*                                                                                                    */
+/*     Custom Characters: Store and display custom characters                                         */
 /*                                                                                                    */
 /******************************************************************************************************/
 
@@ -67,6 +74,13 @@ public:
    void cursorOnChrBlink();
    void cursorOff ();
 
+   // Make music
+   void playTone ( int duration, int scale, int note );
+   
+   // Custom characters
+   void setCustomCharacter(int charIndex, unsigned char bytes[]);
+   void printCustomCharacter(int charIndex);
+   
 	// shortcuts for printing at particular positions
    void at ( int row, int col, char );
    void at ( int row, int col, const char[] );
