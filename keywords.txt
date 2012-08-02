@@ -13,5 +13,8 @@ cr	KEYWORD2
 lf	KEYWORD2
 backLightOn	KEYWORD2
 backLightOff	KEYWORD2
+playTone	KEYWORD2
+setCustomCharacter	KEYWORD2
+printCustomCharacter	KEYWORD2
 pos	KEYWORD2
 at	KEYWORD2

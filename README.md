@@ -23,6 +23,9 @@ The library offers the following functions:
 * lf
 * backLightOn
 * backLightOff
+* playTone
+* setCustomCharacter
+* printCustomCharacter
 * pos
 * at
 
@@ -55,3 +58,6 @@ Original Work done by:
 		  
 Based on SparkFunSerLCD.h from:
 [allen joslin](allen@joslin.net)
+
+Tone/Custom character support added by:
+[Martin C. Stoufer](mcstoufer@speakeasy.net)
