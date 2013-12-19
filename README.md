@@ -52,6 +52,10 @@ Using the library is simple. See the included example for more.
 * Go to `File`->`Examples`. There should now be an entry for `parallax_lcd` in the list. Select it to see the example.
 * Using the example as a guide, write your own code!
 
+# License
+
+This library is provided under the MIT license. You can obtain a copy of this license at http://opensource.org/licenses/MIT.
+
 ##### Misc     
 Original Work done by:
 [Douglas Farrell](cyberblob59@yahoo.com)
