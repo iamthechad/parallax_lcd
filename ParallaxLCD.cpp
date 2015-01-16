@@ -50,21 +50,20 @@ THE SOFTWARE.
 #include "ParallaxLCD.h"
 
 #define PINOUT      0
-#define POSBASE     1
-#define BOUNCE      2
-#define NUMROWS     3
-#define NUMCOLS     4
+#define BOUNCE      1
+#define NUMROWS     2
+#define NUMCOLS     3
 
-ParallaxLCD::ParallaxLCD ( int pin, int numRows, int numCols, int posBase) : SoftwareSerial(pin,pin) {
+#define WRITE_BASE 	128
+// The cursor position for 16 column and 20 column displays uses the same address
+// The 16 column display just doesn't show the last 4 columns
+#define COL_SIZE    20
+
+ParallaxLCD::ParallaxLCD ( int pin, int numRows, int numCols) : SoftwareSerial(pin,pin) {
 	_bv[PINOUT]=pin;
-	_bv[POSBASE]=posBase;
 	_bv[BOUNCE]=10;
 	_bv[NUMROWS]=numRows;
 	_bv[NUMCOLS]=numCols;
-	_ro[0]=0;
-	_ro[1]=64;
-	_ro[2]=numCols;
-	_ro[3]=_ro[1]+numCols;
 }
 
 void ParallaxLCD::setup(boolean startEmpty ) {
@@ -180,23 +179,8 @@ void ParallaxLCD::printCustomCharacter(int charIndex) {
 }
 
 void ParallaxLCD::pos ( int row, int col ) 
-{ 
-	if (row == 0)
-		{
-			write(128 + _ro[(row - _bv[POSBASE])] + (col - _bv[POSBASE])); delay(_bv[BOUNCE]);
-		}
-	else if (row == 1)
-		{
-			write(148 + _ro[(row - _bv[POSBASE])] + (col - _bv[POSBASE])); delay(_bv[BOUNCE]);
-		}
-	else if (row == 2)
-		{
-			write(168 + _ro[(row - _bv[POSBASE])] + (col - _bv[POSBASE])); delay(_bv[BOUNCE]);			
-		}
-	else if (row == 3)
-		{
-			write(188 + _ro[(row - _bv[POSBASE])] + (col - _bv[POSBASE])); delay(_bv[BOUNCE]);			
-		}
+{
+	write(WRITE_BASE + (row * COL_SIZE) + col);
 }
 
 // shortcuts
