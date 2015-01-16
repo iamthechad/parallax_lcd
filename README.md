@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/iamthechad/parallax_lcd.png?label=ready&title=Ready)](https://waffle.io/iamthechad/parallax_lcd)
 # Parallax LCD
 
 The Parallax LCD library allows for writing to Parallax three wire LCDs.
