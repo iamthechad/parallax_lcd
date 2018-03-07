@@ -1,4 +1,4 @@
-[![Stories in Ready](https://badge.waffle.io/iamthechad/parallax_lcd.png?label=ready&title=Ready)](https://waffle.io/iamthechad/parallax_lcd)
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/iamthechad/parallax_lcd.svg?columns=all)](https://waffle.io/iamthechad/parallax_lcd)
 # Parallax LCD
 
 The Parallax LCD library allows for writing to Parallax three wire LCDs.
@@ -10,25 +10,25 @@ For more information about Parallax LCDs, see [http://www.parallax.com](http://w
 
 The library offers the following functions:
 
-* setup
-* on
-* off
-* scrollLeft
-* scrollRight
-* empty
-* cursorUnderline
-* cursorBlock
-* cursorOff
-* cursorOnChrBlink
-* cr
-* lf
-* backLightOn
-* backLightOff
-* playTone
-* setCustomCharacter
-* printCustomCharacter
-* pos
-* at
+* `setup`
+* `on`
+* `off`
+* `scrollLeft`
+* `scrollRight`
+* `empty`
+* `cursorUnderline`
+* `cursorBlock`
+* `cursorOff`
+* `cursorOnChrBlink`
+* `cr`
+* `lf`
+* `backLightOn`
+* `backLightOff`
+* `playTone`
+* `setCustomCharacter`
+* `printCustomCharacter`
+* `pos`
+* `at`
 
 ## Example
 
@@ -46,22 +46,25 @@ Using the library is simple. See the included example for more.
 
 ## Installing
 
-* Clone this repository or select the "Zip" button above to download the code. 
-* Place the directory into `libraries` within your Arduino Sketches folder. (You may have to create the `libraries` folder.) 
-* Restart the Arduino IDE if it's running.
-* Go to `File`->`Examples`. There should now be an entry for `parallax_lcd` in the list. Select it to see the example.
+Installation is performed via the Arduino Library Manager (Sketch -> Include Library)
+
+### Download
+
+* In the library manager, select "Manage Libraries..."
+* In the search box, enter "Parallax LCD"
+* Select the library in the results, pick the desired version and click "Install"
+
+### Manual Installation
+
+* Download the latest zip from the Releases tab. (Alternatively - clone this repository or select the "Zip" button above to download the code.)
+* In the library manager, select "Add .ZIP Library"
+* Select the downloaded zip file
+
+### After Installation
+* Once installed, you may need to restart the Arduino IDE
+* Go to `File`->`Examples`. There should now be an entry for `Parallax LCD` in the list. Select it to see the example.
 * Using the example as a guide, write your own code!
 
 # License
 
 This library is provided under the MIT license. You can obtain a copy of this license at http://opensource.org/licenses/MIT.
-
-##### Misc     
-Original Work done by:
-[Douglas Farrell](cyberblob59@yahoo.com)
-		  
-Based on SparkFunSerLCD.h from:
-[allen joslin](allen@joslin.net)
-
-Tone/Custom character support added by:
-[Martin C. Stoufer](mcstoufer@speakeasy.net)
