@@ -1,8 +1,7 @@
 # Change Log
 
-## [Unreleased](https://github.com/iamthechad/parallax_lcd/tree/HEAD)
-
-[Full Changelog](https://github.com/iamthechad/parallax_lcd/compare/1.1...HEAD)
+## [1.2](https://github.com/iamthechad/parallax_lcd/tree/1.2) (2018-03-07)
+[Full Changelog](https://github.com/iamthechad/parallax_lcd/compare/1.1...1.2)
 
 **Implemented enhancements:**
 
@@ -15,6 +14,7 @@
 
 **Merged pull requests:**
 
+- Update for release [\#10](https://github.com/iamthechad/parallax_lcd/pull/10) ([iamthechad](https://github.com/iamthechad))
 - Update to Arduino 1.5 format [\#9](https://github.com/iamthechad/parallax_lcd/pull/9) ([iamthechad](https://github.com/iamthechad))
 - Add import to header [\#8](https://github.com/iamthechad/parallax_lcd/pull/8) ([iamthechad](https://github.com/iamthechad))
 
