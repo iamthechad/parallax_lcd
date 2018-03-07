@@ -1,4 +1,21 @@
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/iamthechad/parallax_lcd.svg?columns=all)](https://waffle.io/iamthechad/parallax_lcd)
+
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Parallax LCD](#parallax-lcd)
+  - [Functions](#functions)
+  - [Example](#example)
+  - [Installing](#installing)
+    - [Download](#download)
+    - [Manual Installation](#manual-installation)
+    - [After Installation](#after-installation)
+- [License](#license)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Parallax LCD
 
 The Parallax LCD library allows for writing to Parallax three wire LCDs.
