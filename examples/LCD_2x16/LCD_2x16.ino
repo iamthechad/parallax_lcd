@@ -1,9 +1,3 @@
-/* 
-  NOTE: you must: #include <SoftwareSerial.h>
-  BEFORE including the ParallaxLCD.h header
- */
-
-#include <SoftwareSerial.h>
 #include <ParallaxLCD.h>
 
 // Change these values if you're using the 4x20 LCD

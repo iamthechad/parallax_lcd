@@ -34,7 +34,6 @@ The library offers the following functions:
 
 Using the library is simple. See the included example for more.
 
-    #include <SoftwareSerial.h>
     #include <ParallaxLCD.h>
 
     ParallaxLCD lcd(2,2,16); // desired pin, rows, cols
