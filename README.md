@@ -1,4 +1,4 @@
-[![Waffle.io - Columns and their card count](https://badge.waffle.io/iamthechad/parallax_lcd.svg?columns=all)](https://waffle.io/iamthechad/parallax_lcd)
+![Maintenance](https://img.shields.io/maintenance/yes/2019)
 
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
